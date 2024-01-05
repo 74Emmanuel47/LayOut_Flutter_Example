@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:layout_test/Components/Molecules/FavoriteWidget.dart';
 
 class TitleSection extends StatelessWidget {
   const TitleSection({super.key, required this.name, required this.location});
@@ -27,11 +28,7 @@ class TitleSection extends StatelessWidget {
               ],
             ),
           ),
-          const Icon(
-            Icons.star,
-            color: Colors.red,
-          ),
-          const Text("41"),
+          const FavoriteWidget(),
         ],
       ),
     );
